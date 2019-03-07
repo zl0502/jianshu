@@ -1,6 +1,6 @@
 package com.spring;
 
-public class TankProxy implements Move{
+public class TankProxy implements Move {
     private Move t;
 
     public TankProxy(Move t) {
