@@ -78,7 +78,10 @@
         <constructor-arg name="a" value="5"/>
         <constructor-arg name="b" value="3"/>
     </bean>
-    <bean id="UserLogin" class="experise.User">
+    <bean id="userLogin" class="experise.UserLogin">
+        <constructor-arg name="user" ref="User"></constructor-arg>
+    </bean>
+    <bean id="User" class="experise.User">
         <constructor-arg name="account" value="admin"/>
         <constructor-arg name="password" value="111"/>
     </bean>
