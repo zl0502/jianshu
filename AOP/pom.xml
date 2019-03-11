@@ -21,6 +21,7 @@
     <junit.version>4.12</junit.version>
     <log4j.version>1.2.17</log4j.version>
     <s1f4j.version>1.7.12</s1f4j.version>
+    <hutool.version>4.5.1</hutool.version>
   </properties>
 
 
@@ -37,7 +38,19 @@
       <version>${aspectj.version}</version>
     </dependency>
 
+    <!--hutool工具集依赖-->
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>${hutool.version}</version>
+    </dependency>
     <!--spring-context依赖-->
+<!--tool-->
+    <dependency>
+      <groupId>com.google.zxing</groupId>
+      <artifactId>core</artifactId>
+      <version>3.3.3</version>
+    </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>

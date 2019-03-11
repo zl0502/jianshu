@@ -24,15 +24,22 @@
         </aop:aspect>
     </aop:config>-->
 
-<bean id="userDao" class="com.experice.UserDaoImple"/>
+<!--<bean id="userDao" class="com.experice.UserDaoImple"/>
     <bean id="BeforeAdvice" class="com.experice.BeforeAdvice"/>
     <aop:config>
         <aop:aspect id="advice" ref="BeforeAdvice">
         <aop:pointcut id="pointcut" expression="execution(* com.experice.*.*(..))"/>
         <aop:before method="connectDB" pointcut-ref="pointcut"/>
         </aop:aspect>
-    </aop:config>
-
+    </aop:config>-->
+    <!--书99页-->
+<!--<aop:aspectj-autoproxy/>
+    <bean id="fighter" class="com.experice.Fighter"/>
+    <bean id="tiger" class="com.experice.Tiger"/>-->
+    <!--配置图片相关bean-->
+    <aop:aspectj-autoproxy/>
+    <bean id="imageCopy" class="com.experice.ImageCopy"/>
+    <bean id="imageHandler" class="com.experice.ImageHandler"/>
 
 </beans>
 
